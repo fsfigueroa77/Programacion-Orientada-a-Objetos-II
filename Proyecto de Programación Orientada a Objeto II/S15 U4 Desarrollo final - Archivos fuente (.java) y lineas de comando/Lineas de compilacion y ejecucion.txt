@@ -1,0 +1,27 @@
+LINEA DE COMPILACION:
+javac -cp ".\mysql-connector-j-9.7.0.jar" *.java
+
+LINEAS DE DE EJECUCION SERVIDOR:
+java -cp ".;.\mysql-connector-j-9.7.0.jar" MainServidor
+
+CLIENTE SERVICIO AL CLIENTE: 
+java MainServicios
+
+CLIENTE CAJERO AUTOMATICO
+java MainCajero
+
+===============================================================================================================
+
+CONSIDERACIONES:
+
+1) El puerto del servidor esta declarado como entero e inicializada con el valor de 4321 en la linea 6 del archivo MainServidor.java.
+
+2) La IP donde los clientes de Servicio al Cliente y Cajero Automatico se conectan está declarada como String e inicializada como "localhost" en la linea 6 de ambos archivos, MainServicios.java y MainCajero.java.
+
+3) El puerto donde los clientes Servicio al Cliente y Cajero Automatico se conectan está declarada como entero e inicializada con el valor de 4321 en la linea 7 de ambos archivos, MainServicios.java y MainCajero.java.
+
+4) El usuario y contraseña para la conexión con la base de datos están declarados como String en la linea 15 y 16 del archivo MultiClientes.java. Están inicializadas con los valores de "temp1" y "12345" respectivamente.
+
+5) La IP y el puerto para la conexión con la base de datos están declarados como String en la linea 17 y 18 del archivo MultiClientes.java. Están inicializadas con los valores de "localhost" y "3306" respectivamente.
+
+6) En la entrega de los archivos no se pudo incluir el conector "mysql-connector-j-9.7.0.jar" necesario para la ejecución del proyecto, debido a que el peso del mismo es de mas de 2 Mb. Cantidad que supera el limite de tamaño de los archivos que la plataforma permite.
